@@ -1,10 +1,11 @@
 import 'package:assignment/screens/home_screen.dart';
 import 'package:assignment/screens/sos_screen.dart';
-import 'package:assignment/screens/vehicle_imagebutton.dart';
+import 'package:assignment/screens/vault.dart';
+import 'package:assignment/screens/vehicle_page.dart';
 import 'package:flutter/material.dart';
-import 'booking_page.dart';
-import 'profile_page.dart';
-import 'vehicle_page.dart';
+import 'package:assignment/screens/booking_page.dart'; // Added correct import
+import 'package:assignment/screens/profile_page.dart'; // Added correct import
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,16 +37,19 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         leading: Padding(
           padding: const EdgeInsets.only(left: 20.0),
           child: GestureDetector(
-            onTap: () {Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => AddVehicleScreen() ),
-            );},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MyVehicleScreen()),
+              );
+            },
             child: Image.asset(
               'assets/images/bike.png',
               width: 70.0,
               height: 70.0,
               fit: BoxFit.cover,
             ),
+
           ),
         ),
       ),
@@ -63,7 +67,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
               // Booking Screen
               BookingScreen(numberOfContainers: 10),
               // My Vehicle Screen
-              MyVehicleScreen(),
+          AddVehicle(),
               // Profile Screen
               ProfileScreen(),
         ],
