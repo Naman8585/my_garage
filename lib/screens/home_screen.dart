@@ -1,3 +1,4 @@
+import 'package:assignment/screens/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'animations.dart';
@@ -34,53 +35,29 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
+                        Text("Home"),
                         Text("Services"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                   box(),
                     Column(
                       children: [
-                        Text("Periodic"),
+                        Text("Garage"),
                         Text("Services"),
                       ],
                     ),
                   ],
                 ),
-              ),
             ],
           ),
           SizedBox(height: 20.0),
@@ -98,20 +75,9 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
                         Text("Periodic"),
@@ -120,55 +86,30 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Vehicle"),
+                        Text("Inspector"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Wash &"),
+                        Text("Dry"),
                       ],
                     ),
                   ],
                 ),
-              ),
             ],
           ),
           const SizedBox(height: 20.0),
@@ -186,77 +127,41 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+              Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Brake"),
+                        Text("Maintenance"),
                       ],
                     ),
                   ],
                 ),
-              ),
               const SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Cable"),
+                        Text("Replacement"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+              Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Insurance"),
+                        Text("Claims"),
                       ],
                     ),
                   ],
                 ),
-              ),
             ],
           ),
           SizedBox(height: 20.0),
@@ -274,77 +179,41 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                   box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Regular"),
+                        Text("Repairs"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+              Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Engine"),
+                        Text("Repairs"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                   box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Shocker"),
+                        Text("Repairs"),
                       ],
                     ),
                   ],
                 ),
-              ),
             ],
           ),
           SizedBox(height: 20.0),
@@ -362,77 +231,38 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Tyres"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                   box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Battery"),
                       ],
                     ),
                   ],
                 ),
-              ),
               SizedBox(width: 50.0),
-              InkWell(
-                onTap: () {
-                  // Handle onTap
-                },
-                child: Column(
+               Column(
                   children: [
-                    Container(
-                      height: 70.0,
-                      width: 70.0,
-                      decoration: BoxDecoration(
-                        color: Colors.black,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
+                    box(),
                     Column(
                       children: [
-                        Text("Periodic"),
-                        Text("Services"),
+                        Text("Accessories"),
                       ],
                     ),
                   ],
                 ),
-              ),
             ],
           ),
           SizedBox(height: 20.0),

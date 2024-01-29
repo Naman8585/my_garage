@@ -6,19 +6,20 @@ class MyVehicleScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Vault",
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 40.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
       body: ListView(
         children: [
           SizedBox(height: 20.0),
-          Center(
-            child: Text(
-              "Vault",
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
+
           SizedBox(height: 10.0),
           Padding(
             padding: const EdgeInsets.only(left: 20.0),

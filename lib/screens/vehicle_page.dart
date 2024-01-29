@@ -1,5 +1,5 @@
-import 'package:assignment/screens/vault.dart';
 import 'package:flutter/material.dart';
+import 'package:assignment/screens/vault.dart';
 
 class AddVehicle extends StatefulWidget {
   @override
@@ -7,36 +7,34 @@ class AddVehicle extends StatefulWidget {
 }
 
 class _AddVehicleState extends State<AddVehicle> {
-  List<Widget> vehicleContainers = []; // List to store created containers
+  List<Widget> vehicleContainers = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Add Your Vehicle"),),
+      appBar: AppBar(title: Text("Add Your Vehicle")),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: ListView(children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            // Align the button at the bottom
-            children: [
-              Center(
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Functionality to add a new container
-                    setState(() {
-                      vehicleContainers.add(_buildVehicleContainer());
-                    });
-                  },
-                  child: Text("Add New Vehicle"),
-                ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  vehicleContainers.add(_buildVehicleContainer());
+                });
+              },
+              child: Text("Add New Vehicle"),
+            ),
+            SizedBox(height: 20.0),
+            Expanded(
+              child: ListView(
+                shrinkWrap: true,
+                children: vehicleContainers.reversed.toList(),
               ),
-              SizedBox(height: 20.0),
-              // Display the created containers in reverse order
-              ...vehicleContainers.reversed,
-            ],
-          ),
-        ]),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -46,17 +44,15 @@ class _AddVehicleState extends State<AddVehicle> {
       key: Key(vehicleContainers.length.toString()),
       direction: DismissDirection.startToEnd,
       onDismissed: (direction) {
-        // Functionality to remove the container
         setState(() {
           vehicleContainers.removeAt(vehicleContainers.length - 1);
         });
       },
       background: Container(
-
         margin: EdgeInsets.only(bottom: 20.0),
         decoration: BoxDecoration(
-            color: Colors.red,
-          borderRadius: BorderRadius.circular(8.0)
+          color: Colors.red,
+          borderRadius: BorderRadius.circular(8.0),
         ),
         alignment: Alignment.centerLeft,
         child: Icon(Icons.delete, color: Colors.white),
@@ -70,7 +66,7 @@ class _AddVehicleState extends State<AddVehicle> {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -79,8 +75,7 @@ class _AddVehicleState extends State<AddVehicle> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-            SizedBox(width: 130.0,),
-
+            SizedBox(width: 130.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(
@@ -90,7 +85,6 @@ class _AddVehicleState extends State<AddVehicle> {
                     child: IconButton(
                       icon: Icon(Icons.add, color: Colors.white),
                       onPressed: () {
-                        // Functionality to remove the container
                         Navigator.push(
                           context,
                           MaterialPageRoute(builder: (context) => MyVehicleScreen()),
@@ -100,7 +94,7 @@ class _AddVehicleState extends State<AddVehicle> {
                   ),
                   Padding(
                     padding: const EdgeInsets.all(0.0),
-                    child: Text("Add Details",style: TextStyle(color: Colors.white),),
+                    child: Text("Add Details", style: TextStyle(color: Colors.white)),
                   )
                 ],
               ),
@@ -110,14 +104,12 @@ class _AddVehicleState extends State<AddVehicle> {
               child: IconButton(
                 icon: Icon(Icons.delete, color: Colors.white),
                 onPressed: () {
-                  // Functionality to remove the container
                   setState(() {
                     vehicleContainers.removeLast();
                   });
                 },
               ),
             ),
-
           ],
         ),
       ),

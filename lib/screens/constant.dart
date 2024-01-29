@@ -139,3 +139,26 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     );
   }
 }
+
+class box extends StatelessWidget {
+  const box({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        // Add your functionality here
+        print("Container tapped!");
+      },
+      child: Container(
+        height: 70.0,
+        width: 70.0,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+      ),
+    );
+
+  }
+}
