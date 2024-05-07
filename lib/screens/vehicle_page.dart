@@ -75,7 +75,7 @@ class _AddVehicleState extends State<AddVehicle> {
                 style: TextStyle(color: Colors.white),
               ),
             ),
-            SizedBox(width: 130.0),
+            SizedBox(width: 95.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(

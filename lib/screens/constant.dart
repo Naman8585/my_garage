@@ -159,6 +159,36 @@ class box extends StatelessWidget {
         ),
       ),
     );
-
   }
 }
+
+class addbox extends StatelessWidget {
+  const addbox({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        // Add your functionality here
+        print("Container tapped!");
+      },
+      child: Container(
+        height: 70.0,
+        width: 70.0,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(8.0),
+        ),
+        child: Center(
+          child: Icon(
+            Icons.add,
+            color: Colors.white,
+            size: 40.0, // Adjust the size as needed
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+

@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
                     Column(
                       children: [
                         Text("Vehicle"),
-                        Text("Inspector"),
+                        Text("Inspection"),
                       ],
                     ),
                   ],
@@ -205,7 +205,11 @@ class _HomePageState extends State<HomePage> {
               SizedBox(width: 50.0),
                Column(
                   children: [
-                   box(),
+                 Image.asset(
+                 'assets/images/shocker.jpg',
+                   width: 70.0,
+                   height: 70.0,
+               ),
                     Column(
                       children: [
                         Text("Shocker"),

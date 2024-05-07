@@ -124,7 +124,7 @@ class _SosScreenState extends State<SosScreen>
                 ),
               ],
             ),
-            SizedBox(height: 380.0),
+            SizedBox(height: 300.0),
             Center(
               child: ElevatedButton(
                 style: ButtonStyle(
@@ -142,7 +142,7 @@ class _SosScreenState extends State<SosScreen>
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.miniEndFloat,
       floatingActionButton: Padding(
-        padding: const EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(20.0),
         child: FloatingActionButton(
           onPressed: () {
           },
